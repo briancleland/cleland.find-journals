@@ -1,0 +1,12 @@
+{
+  "name": "cleland-find-journals",
+  "title": "find-journals",
+  "description": "Find 3 and 4 star ABS rated journals in project references",
+  "homepage": "",
+  "version": "0.0.1",
+  "author": "Brian Cleland <brian_cleland@yahoo.com> (https://github.com/briancleland)",
+  "license": "MIT",
+  "engines": {
+    "brackets": ">=0.31.0"
+  }
+}
