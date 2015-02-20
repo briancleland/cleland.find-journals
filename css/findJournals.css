@@ -77,6 +77,13 @@
   vertical-align: middle;
 }
 
+.journal-refs {
+  color: #666;
+  vertical-align: middle;
+  margin: 0 2px;
+  
+}
+
 #fj-menu {
   position: fixed;
   width: 100%;
@@ -93,7 +100,6 @@
   font-size: 120%;
   color: #fff;
   right: 40px;
-  margin-top: -30px;
 }
 
 #qda-panel .fa {
