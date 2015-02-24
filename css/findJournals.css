@@ -1,5 +1,4 @@
-#journals-tree,
-#journals-table {
+#journals-tree {
   background: lightgray;
   padding: 10px;
   border: 1px solid #ccc;
@@ -9,6 +8,43 @@
   overflow: scroll;
   position: relative;
   border-radius: 3px;
+}
+
+#journals-table {
+  background: lightgray;
+  border: 1px solid #ccc;
+  float: left;
+  margin: 40px 0 10px 10px;
+  width: calc(100% - 20px);
+  position: relative;
+  border-radius: 3px;
+}
+
+#journals-table td {
+  padding: 5px;
+}
+
+.authors {
+  min-width: 200px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;}
+
+.details {
+  min-width: 400px;
+  max-width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.journal-title {
+  min-width: 120px;
+}
+
+.journal-rating {
+  color: red;
 }
 
 #fj-panel .fa-star {
