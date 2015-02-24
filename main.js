@@ -16,6 +16,7 @@ define(function (require, exports, module) {
   var panelHtml = require("text!html/panel.html");
   var panel;
   var _find = require("lib/find");
+  var _table = require("lib/table");
 
   function _journalBrowser() {
     if (panel.isVisible()) {
@@ -23,6 +24,7 @@ define(function (require, exports, module) {
     } else {
       panel.show();
       _find.createTree();
+      _table.createTable();
     }
   }
   
@@ -36,6 +38,14 @@ define(function (require, exports, module) {
     panel = PanelManager.createBottomPanel(DO_FIND_JOURNALS, $(panelHtml), 300);
     $("#fj-panel-close").click(function () {
       panel.hide();
+    });
+    $("#fj-panel #show-tree").click(function () {
+      $("#fj-panel #table-stuff").hide();
+      $("#fj-panel #tree-stuff").show();
+    });
+    $("#fj-panel #show-table").click(function () {
+      $("#fj-panel #tree-stuff").hide();
+      $("#fj-panel #table-stuff").show();
     });
   });
 
